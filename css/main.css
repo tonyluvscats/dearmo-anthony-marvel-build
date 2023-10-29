@@ -16,23 +16,28 @@ body {
 
 header {
     background-color: red;
+    background-image: url('../images/space.jpg');
+    background-position: center;
+    background-size: cover;
     padding: 10px 0;
 }
 
 #main-logo {
-    width: 300px;
+    width: 350px;
     display: block;
     margin: 0 auto;  
     /*margin top and bottom, 0. Margin left and right auto */
-    box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+    /*box-shadow: 3px 3px 5px rgba(0,0,0,.3);*/
 }
 
 #character_nav {
     background-color: #675050;
-    background-image: url('../images/characters_art_mas_mob_01.jpeg');
+    background-image: url('../images/time-vortex.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    padding-bottom: 50px;
 }
 
 .characters {
@@ -44,12 +49,18 @@ header {
 }
 
 .characters li {
-    height: 220px;
+    width: 180px;
+    height: 350px;
     margin: 10px 8px;
     text-align: left;
     cursor: pointer;
-    box-shadow: 0 155px 0 rgb(255, 0, 0) inset;
-    transition: box-shadow .2s ease;
+    background-color: #ffffff00;
+    /* TARDIS blue is #003b6f*/
+    /* The y position of this is so strange.. - is up and + is down??
+    box-shadow: 0px -200px 10px -10px #003b6f inset; 
+    Actually I'm gonna comment this out because I want to save it while I try something with li h5
+    */
+    transition: box-shadow .2s ease, scale .2s ease, margin-right .2s, margin-left .2s;
 }
 
 .characters li a {
@@ -57,12 +68,23 @@ header {
 }
 
 .characters li:hover {
-    box-shadow: 0 220px 0 rgb(255, 0, 0) inset;
+    /* box-shadow: 0px 0px 10px 100px #003b6f inset; */
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.characters li:hover h5 {
+    /* Moving the shadow to the header so it doesn't appear behind the transparent companion image */
+    box-shadow: 0px 100px 0px 0px #2a2364 inset;
 }
 
 .characters li h5 {
     color: #fff;
     padding: 12px 8px;
+    margin: 0px 0px 0px 0px;
+    padding-top: -6px;
+    box-shadow: 0px 6px 0px 0px #003b6f inset;
+    transition: box-shadow .2s ease;
 }
 
 article, #instructions {
@@ -81,19 +103,27 @@ article p, #instructions p {
 }
 
 .sprite {
-    width: 150px;
-    height: 150px;
-    background-image: url('../images/marvelSprites.jpg');
+    width: 240px;
+    height: 360px;
+    scale: 0.8;
+    translate: -30px 36px;
+    background-image: url('../images/companionSpritesFinal.png');
+    transition: scale .2s ease, translate .2s ease;
 }
 
-#carol {background-position: -150px 0;}
-#clint {background-position: -300px 0;}
-#hulk {background-position: -450px 0;}
-#thor {background-position: -600px 0;}
-#widow {background-position: -750px 0;}
+.characters li:hover .sprite {
+    scale: 1;
+    translate: -30px -0px;
+}
+
+#carol {background-position: -240px 0;}
+#clint {background-position: -480px 0;}
+#hulk {background-position: -720px 0;}
+#thor {background-position: -960px 0;}
+#widow {background-position: -1200px 0;}
 
 #cap:hover, #carol:hover, #clint:hover, #hulk:hover, #thor:hover, #widow:hover {
-    background-position-y: -150px;
+    background-position-y: 360px;
 }
 
 footer {
