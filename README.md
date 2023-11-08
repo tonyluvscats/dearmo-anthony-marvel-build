@@ -1,5 +1,7 @@
-# Marvel Comics Build For Fall 2023
+# Marvel Comics Build For Fall 2023 - Doctor Who
 This repo is for an in-class build demonstrating basic CSS layouts, CSS sprites, and a light-box effect.
+
+The original site included Marvel characters. These have been replaced with Doctor Who companions.
 
 ## Installation
 
@@ -7,7 +9,7 @@ No Installation is required.
 
 ## Usage
 
-Open index.html in the browser of your choice.
+Open index.html in the browser of your choice. Hover over the companions and click to learn more.
 
 ## Contributing
 
@@ -23,7 +25,9 @@ TODO: Write history
 
 ## Credits
 
-Marco De Luca
+Marco De Luca - Original Marvel Build
+
+Anthony D'Earmo
 
 ## License
 
