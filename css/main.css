@@ -152,7 +152,7 @@ footer {
     padding-top: 100%;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/Cap_LB_Bg.png');
+    background-image: url('../images/rose_lb_bg.png');
     background-repeat: no-repeat;
     background-size: 55vh;
     background-position: 40px center;
@@ -163,11 +163,23 @@ footer {
 }
 
 #lightbox2 {
-    background-image: url('../images/Thor_LB_Bg.png');
+    background-image: url('../images/martha-lb-bg.png');
 }
 
 #lightbox3 {
-    background-image: url('../images/Thor_LB_Bg.png');
+    background-image: url('../images/donna-lb-bg.png');
+}
+
+#lightbox4 {
+    background-image: url('../images/river-lb-bg.png');
+}
+
+#lightbox5 {
+    background-image: url('../images/jack-lb-bg.png');
+}
+
+#lightbox6 {
+    background-image: url('../images/sarah-lb-bg.png');
 }
 
 .lightbox_close {
@@ -190,10 +202,11 @@ footer {
 .lightbox article {
     width: 55%;
     margin-left: 32%;
-    padding-top: 100px;
+    padding-top: 5px;
+    margin-top: 100px;
 
-    background-color: rgb(0, 0, 0, 1);
-    rotate: -10deg;
+    background-color: #101b25;
+    rotate: 0deg;
 }
 
 .lb_text, .lb_heading {
